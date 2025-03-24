@@ -1,0 +1,42 @@
+{
+    "manifest_version": 3,
+    "name": "inclusive_search",
+    "version": "1.0",
+    "default_locale": "fr",
+    "description": "This is inclusive serch for LinkedIn",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/icon.png",
+        "48": "icons/icon.png",
+        "128": "icons/icon.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    },
+    "permissions": [
+      "scripting",
+      "tabs",
+      "activeTab"
+    ],
+    "host_permissions": [
+      "https://www.linkedin.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://*.linkedin.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "dictionary/*.json"
+        ],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  

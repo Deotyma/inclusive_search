@@ -1,0 +1,13 @@
+{
+    "développeur": ["développeuse", "développeur.se", "développeur(euse)"],
+    "programmeur": ["programmeuse"],
+    "ingénieur": ["ingénieure", "ingénieur.e"],
+    "analyste": ["analyste féminine"],
+    "architecte": ["architecte logicielle", "architecte système"],
+    "testeur": ["testeuse"],
+    "concepteur": ["conceptrice"],
+    "administrateur": ["administratrice"],
+    "spécialiste": ["spécialiste (f)"],
+    "manager": ["manageuse"]
+  }
+  

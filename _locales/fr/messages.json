@@ -1,0 +1,15 @@
+{
+    "app_name": {
+      "message": "Recherche inclusive LinkedIn"
+    },
+    "search_placeholder": {
+      "message": "ex : développeur Paris"
+    },
+    "search_button": {
+      "message": "Rechercher"
+    },
+    "filter_women": {
+      "message": "Filtrer uniquement les femmes"
+    }
+  }
+  

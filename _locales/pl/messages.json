@@ -1,0 +1,15 @@
+{
+    "app_name": {
+      "message": "Inkluzywne wyszukiwanie LinkedIn"
+    },
+    "search_placeholder": {
+      "message": "np. programista Warszawa"
+    },
+    "search_button": {
+      "message": "Szukaj"
+    },
+    "filter_women": {
+      "message": "Filtruj tylko kobiety"
+    }
+  }
+  

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title><span data-i18n="app_name"></span></title>
+</head>
+<body>
+  <h3 data-i18n="app_name"></h3>
+  
+  <input type="text" id="search" placeholder="" />
+  <button id="submit" data-i18n="search_button"></button>
+  
+  <hr />
+  
+  <button id="filterWomen" data-i18n="filter_women"></button>
+
+  <script src="popup.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const msg = el.getAttribute("data-i18n");
+        el.textContent = chrome.i18n.getMessage(msg);
+      });
+      const placeholder = chrome.i18n.getMessage("search_placeholder");
+      document.getElementById("search").setAttribute("placeholder", placeholder);
+    });
+  </script>
+</body>
+</html>
