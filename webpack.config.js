@@ -28,7 +28,8 @@ module.exports = {
       patterns: [
         { from: "public", to: "." },
         { from: "src/popup/popup.html", to: "popup.html" },
-        { from: "src/dictionary.json", to: "dictionary.json" }
+        { from: "dictionary", to: "dictionary" },
+        { from: "_locales", to: "_locales" }
       ]
     })
   ]
