@@ -28,6 +28,7 @@ module.exports = {
       patterns: [
         { from: "public", to: "." },
         { from: "src/popup/popup.html", to: "popup.html" },
+        { from: "src/popup/style.css", to: "style.css" },
         { from: "dictionary", to: "dictionary" },
         { from: "_locales", to: "_locales" }
       ]

@@ -34,3 +34,23 @@ document.getElementById("filterWomen")?.addEventListener("click", () => {
       });
     });
   });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    console.log("Język przeglądarki:", chrome.i18n.getUILanguage());
+  
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const msg = el.getAttribute("data-i18n");
+      const translated = chrome.i18n.getMessage(msg || "");
+      if (translated) el.textContent = translated;
+    });
+  
+    const placeholder = chrome.i18n.getMessage("search_placeholder");
+    if (placeholder) {
+      const input = document.getElementById("search") as HTMLInputElement;
+      input.placeholder = placeholder;
+    }
+  
+    const title = chrome.i18n.getMessage("app_name");
+    if (title) document.title = title;
+  });
+  
