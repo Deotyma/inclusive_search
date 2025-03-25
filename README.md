@@ -1,3 +1,6 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+
 # Inclusive Search
 
 **Inclusive Search** is a browser extension that enhances profile search on LinkedIn, especially in **Polish** and **French**, by recognizing feminine forms of job titles, inclusive and gendered keywords, and disability-related descriptors. 
